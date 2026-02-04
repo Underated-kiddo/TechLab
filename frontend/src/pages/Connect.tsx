@@ -1,0 +1,1 @@
+where you can look at other peers ratings on heir skills  basically their statusbar
