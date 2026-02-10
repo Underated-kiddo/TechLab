@@ -1,9 +1,18 @@
-    import { useNavigate } from "react-router-dom";
-    import { Button } from "./components/ui/button";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { Button } from "./components/ui/button";
+import Dashboard from "./pages/Dashboard.tsx";
 
-    export default function Home() {
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
+  );
+}
+function HomePage() {
     const navigate = useNavigate();
-
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         {/* Navigation Bar */}
@@ -111,6 +120,13 @@
             >
             Sign Up Now
             </Button>
+            <Button
+            onClick={() => navigate("/dashboard")}
+            className="bg-blue-600 hover:bg-blue-700 px-12 py-4 text-lg"
+            >
+            Go to Dashboard
+            </Button>
+
         </section>
 
         {/* Footer */}
