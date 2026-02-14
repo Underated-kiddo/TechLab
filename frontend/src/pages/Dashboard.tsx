@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import CreateRoom from "./CreateRoom";
 import {
   Users,
   MessageSquare,
@@ -13,10 +14,10 @@ import {
   PlusCircle,
   Settings,
   LogOut,
+  Calendar,
   ChevronLeft,
   ChevronRight,
   BarChart3,
-  Calendar,
   FileText,
   X,
   Search,
@@ -94,9 +95,9 @@ const LocalSidebar: React.FC<LocalSidebarProps> = ({
     { path: '/dashboard', icon: <Home size={20} />, label: 'Dashboard' },
     { path: '/profile', icon: <User size={20} />, label: 'Profile' },
     { path: '/chat', icon: <MessageSquare size={20} />, label: 'Chat' },
-    { path: '/create-room', icon: <PlusCircle size={20} />, label: 'Create Room' },
+    { path: '/CreateRoom', icon: <PlusCircle size={20} />, label: 'Create Room' },
     { path: '/analytics', icon: <BarChart3 size={20} />, label: 'Analytics' },
-    { path: '/calendar', icon: <Calendar size={20} />, label: 'Calendar' },
+    { path: '/Calendar', icon: <Calendar size={20} />, label: 'Calendar' },
     { path: '/reports', icon: <FileText size={20} />, label: 'Reports' },
     { path: '/settings', icon: <Settings size={20} />, label: 'Settings' },
   ];
@@ -478,8 +479,8 @@ const LocalHeader: React.FC<LocalHeaderProps> = ({ onMenuClick }) => {
 
 const DashboardContent: React.FC = () => {
   const stats = [
-    { label: 'Total Users', value: '1,234', icon: <Users />, change: '+12%', color: 'bg-blue-500' },
-    { label: 'Active Rooms', value: '48', icon: <MessageSquare />, change: '+8%', color: 'bg-green-500' },
+    { label: 'Interacting Users', value: '1,234', icon: <Users />, change: '+12%', color: 'bg-blue-500' },
+    { label: 'My Rooms', value: '48', icon: <MessageSquare />, change: '+8%', color: 'bg-green-500' },
     { label: 'Messages Today', value: '2,847', icon: <Activity />, change: '+23%', color: 'bg-purple-500' },
     { label: 'Engagement Rate', value: '78%', icon: <TrendingUp />, change: '+5%', color: 'bg-orange-500' },
   ];
