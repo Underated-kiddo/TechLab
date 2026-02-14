@@ -19,13 +19,13 @@
             </Button>
             <Button
                 variant="outline"
-                onClick={() => navigate("/login")}
+                onClick={() => navigate("/signup-in")}
                 className="border-blue-700 text-blue-300 hover:bg-blue-900"
             >
                 Login
             </Button>
             <Button
-                onClick={() => navigate("/signup")}
+                onClick={() => navigate("/signup-in")}
                 className="bg-blue-600 hover:bg-blue-700 text-white"
             >
                 Sign Up
@@ -43,7 +43,7 @@
             </p>
             <div className="flex gap-4 justify-center">
             <Button
-                onClick={() => navigate("/signup")}
+                onClick={() => navigate("/signup-in")}
                 className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg text-white"
             >
                 Sign-up now 

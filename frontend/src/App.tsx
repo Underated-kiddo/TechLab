@@ -2,6 +2,7 @@
     import Home from "./pages/Home";
     import Dashboard from "./pages/Dashboard";
     import AdminDash from "./pages/AdminDash";
+    import SignupSignIn from "./pages/Signup-SignIn";
 
     export default function App() {
     return (
@@ -9,6 +10,7 @@
             <Route path="/" element={<Home />} />
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/admin-dashboard" element={<AdminDash/>}/>
+            <Route path="/signup-in" element={<SignupSignIn/>}/>
         </Routes>
     );
     }
