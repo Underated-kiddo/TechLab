@@ -72,7 +72,6 @@ const Dashboard: React.FC = () => {
   );
 };
 
-/* ---------------- Local Sidebar ---------------- */
 
 interface LocalSidebarProps {
   collapsed: boolean;
@@ -95,7 +94,8 @@ const LocalSidebar: React.FC<LocalSidebarProps> = ({
     { path: '/dashboard', icon: <Home size={20} />, label: 'Dashboard' },
     { path: '/profile', icon: <User size={20} />, label: 'Profile' },
     { path: '/chat', icon: <MessageSquare size={20} />, label: 'Chat' },
-    { path: '/CreateRoom', icon: <PlusCircle size={20} />, label: 'Create Room' },
+    { path: '/create-room', icon: <PlusCircle size={20} />, label: 'Create Room' },
+    { path: '/explore-rooms', icon: <PlusCircle size={20} />, label: 'Explore Rooms' },
     { path: '/analytics', icon: <BarChart3 size={20} />, label: 'Analytics' },
     { path: '/Calendar', icon: <Calendar size={20} />, label: 'Calendar' },
     { path: '/reports', icon: <FileText size={20} />, label: 'Reports' },
@@ -220,7 +220,6 @@ const LocalSidebar: React.FC<LocalSidebarProps> = ({
   );
 };
 
-/* ---------------- Local Header ---------------- */
 
 interface LocalHeaderProps {
   onMenuClick?: () => void;
@@ -241,6 +240,7 @@ const LocalHeader: React.FC<LocalHeaderProps> = ({ onMenuClick }) => {
       '/profile': 'My Profile',
       '/chat': 'Messages',
       '/create-room': 'Create Room',
+      '/explore-rooms': 'Explore Rooms',
       '/settings': 'Settings',
       '/analytics': 'Analytics',
       '/calendar': 'Calendar',

@@ -20,13 +20,13 @@
             </Button>
             <Button
                 variant="outline"
-                onClick={() => navigate("/signup-in")}
+                onClick={() => navigate("/login")}
                 className="border-blue-700 text-blue-300 hover:bg-blue-900"
             >
                 Login
             </Button>
             <Button
-                onClick={() => navigate("/signup-in")}
+                onClick={() => navigate("/signup")}
                 className="bg-blue-600 hover:bg-blue-700 text-white"
             >
                 Sign Up
@@ -44,14 +44,14 @@
             </p>
             <div className="flex gap-4 justify-center">
             <Button
-                onClick={() => navigate("/signup-in")}
+                onClick={() => navigate("/signup")}
                 className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg text-white"
             >
                 Sign-up now 
             </Button>
             <Button
                 variant="outline"
-                onClick={() => navigate("/About")}
+                onClick={() => navigate("/about")}
                 className="border-blue-600 text-blue-300 hover:bg-blue-900 px-8 py-3 text-lg"
             >
                 Explore Platform
@@ -119,7 +119,7 @@
             opportunities for learning and growth.
             </p>
             <Button
-            onClick={() => navigate("/Dashboard")}
+            onClick={() => navigate("/dashboard")}
             className="bg-blue-600 hover:bg-blue-700 px-12 py-4 text-lg text-white"
             >
             Get Started →
