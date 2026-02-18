@@ -1,5 +1,6 @@
     import { useNavigate } from "react-router-dom";
     import { Button } from "../components/ui/button";
+    import SignupSignIn from "./Signup-SignIn";
 
     export default function Home() {
     const navigate = useNavigate();

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import CreateRoom from "./CreateRoom";
 import {
   Users,
   MessageSquare,
@@ -96,7 +97,7 @@ const LocalSidebar: React.FC<LocalSidebarProps> = ({
     { path: '/create-room', icon: <PlusCircle size={20} />, label: 'Create Room' },
     { path: '/explore-rooms', icon: <PlusCircle size={20} />, label: 'Explore Rooms' },
     { path: '/analytics', icon: <BarChart3 size={20} />, label: 'Analytics' },
-    { path: '/calendar', icon: <Calendar size={20} />, label: 'Calendar' },
+    { path: '/Calendar', icon: <Calendar size={20} />, label: 'Calendar' },
     { path: '/reports', icon: <FileText size={20} />, label: 'Reports' },
     { path: '/settings', icon: <Settings size={20} />, label: 'Settings' },
   ];
