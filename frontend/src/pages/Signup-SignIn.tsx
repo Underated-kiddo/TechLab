@@ -41,8 +41,12 @@ const InputField: React.FC<InputFieldProps> = ({
   </div>
 );
 
-const SignupSignIn: React.FC = () => {
-  const [action, setAction] = useState<AuthAction>("Sign Up");
+interface SignupSignInProps {
+  initialAction?: AuthAction;
+}
+
+const SignupSignIn: React.FC<SignupSignInProps> = ({ initialAction }) => {
+  const [action, setAction] = useState<AuthAction>(initialAction ?? "Sign Up");
   const [showPass, setShowPass] = useState<boolean>(false);
   const [showConfirmPass, setShowConfirmPass] = useState<boolean>(false);
 
