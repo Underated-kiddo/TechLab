@@ -3,6 +3,7 @@
     import Dashboard from "./pages/Dashboard";
     import AdminDash from "./pages/AdminDash";
     import SignupSignIn from "./pages/Signup-SignIn";
+    import ExploreRooms from "./pages/ExploreRooms";
 
     export default function App() {
     return (
@@ -11,6 +12,7 @@
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/admin-dashboard" element={<AdminDash/>}/>
             <Route path="/signup-in" element={<SignupSignIn/>}/>
+            <Route path="/exploreRooms" element={<ExploreRooms/>}/>
         </Routes>
     );
     }

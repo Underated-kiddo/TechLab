@@ -26,6 +26,7 @@
     Menu,
     BookOpen,
     ComputerIcon,
+    Boxes,
     } from 'lucide-react';
     import { useTheme } from '../context/ThemeContext';
     import { Line,    LineChart,
@@ -98,6 +99,7 @@
         { path: '/admin-dashboard', icon: <Home size={20} />, label: 'Dashboard' },
         { path: '/users', icon: <Users size={20} />, label: 'Manage Users' },
         { path: '/chat', icon: <MessageSquare size={20} />, label: 'Chat Rooms' },
+        { path: '/exploreRooms', icon:<Boxes size={20}/>, label: 'Explore Rooms'},
         { path: '/manage-rooms', icon:<BookOpen size={20}/>, label: 'Manage Rooms'},
         { path: '/reports', icon: <FileText size={20} />, label: 'Reports' },
         { path: '/analytics', icon: <BarChart3 size={20} />, label: 'Analytics' },
